@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "somethink": {
+    "something": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -60,10 +60,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "somethink:build:production"
+              "buildTarget": "something:build:production"
             },
             "development": {
-              "buildTarget": "somethink:build:development"
+              "buildTarget": "something:build:development"
             }
           },
           "defaultConfiguration": "development"

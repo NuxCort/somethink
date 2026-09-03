@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39356df4-15bb-40b9-8394-42e801763eac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/somethink/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/somethink/src/app/app.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/somethink/src/app/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/somethink/src/app/app.spec.ts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/somethink/src/app/shared/types/flex-block-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/somethink/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/somethink/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/somethink/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/somethink/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/somethink/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/src/app/app.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/somethink/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/src/app/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/somethink/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/somethink/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/somethink/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/somethink/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1788466296863</updated>
-      <workItem from="1788466298102" duration="3818000" />
+      <workItem from="1788466298102" duration="6249000" />
     </task>
     <servers />
   </component>
