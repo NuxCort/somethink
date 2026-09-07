@@ -7,7 +7,6 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint",
     "lint:fix": "prettier -w \"{*.json,*.ts,*.scss}\" ./src && eslint --fix ./src"
   },
   "private": true,
