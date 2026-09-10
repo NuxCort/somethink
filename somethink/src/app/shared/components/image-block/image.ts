@@ -13,5 +13,5 @@ export class ImageBlockComponent {
   public readonly width = input<number>(0);
   public readonly height = input<number>(0);
 
-  protected readonly imageUrl = computed<string>(() => `@app/shared/assets/svg/${this.imageName()}`);
+  protected readonly imageUrl = computed<string>(() => `assets/svg/${this.imageName()}`);
 }
