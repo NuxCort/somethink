@@ -1,0 +1,9 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: 'Roboto', sans-serif;
+  margin: 1em;
+}

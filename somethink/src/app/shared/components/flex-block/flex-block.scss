@@ -1,5 +1,7 @@
 .host {
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: var(--flex-direction);
   justify-content: var(--flex-justify-content);
   align-items: var(--flex-align-items);
