@@ -6,7 +6,7 @@ import { FlexBlock } from '@app/shared/components/flex-block/flex-block';
 @Component({
   selector: 'header-base',
   template: `
-    <flex-block>
+    <flex-block class="header" [flexDirection]="'row'" [flexJustifyContent]="'space-between'">
       <app-logo />
       <app-search />
     </flex-block>

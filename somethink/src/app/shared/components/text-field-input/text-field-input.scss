@@ -1,1 +1,5 @@
-.input {}
+@use '_mixins' as mixins;
+
+.material-field {
+  @include mixins.input;
+}

@@ -1,3 +1,10 @@
 :host {
-  gap: 1rem;
+  display: flex;
+  width: 100%;
+}
+
+.header {
+  background: aliceblue;
+  padding: 8px;
+  border-radius: 8px;
 }
