@@ -3,6 +3,7 @@ import {
   FlexAlignItems,
   FlexAlignSelf,
   FlexDirection,
+  FlexFlow,
   FlexJustifyContent,
 } from '../../types/flex-block-types';
 import { pxToRem } from '@app/shared/utils/px-to-rem-util';
@@ -17,14 +18,16 @@ import { pxToRem } from '@app/shared/utils/px-to-rem-util';
     '[style.--flex-justify-content]': 'flexJustifyContent()',
     '[style.--flex-align-items]': 'flexAlignItems()',
     '[style.--flex-align-self]': 'flexAlignSelf()',
+    '[style.--flex-flow]': 'flexFlow()',
     '[style.--gap]': 'resultGap()',
   },
 })
 export class FlexBlock {
-  public readonly flexDirection: InputSignal<FlexDirection> = input<FlexDirection>('column');
+  public readonly flexDirection = input<FlexDirection>('row');
   public readonly flexJustifyContent = input<FlexJustifyContent>('center');
   public readonly flexAlignItems = input<FlexAlignItems>('center');
   public readonly flexAlignSelf = input<FlexAlignSelf>('stretch');
+  public readonly flexFlow = input<FlexFlow>('unset');
   public readonly gap = input<number>(0);
 
   protected readonly resultGap = computed(() => pxToRem(this.gap()));

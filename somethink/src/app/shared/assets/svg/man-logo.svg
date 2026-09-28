@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="iconShadowUser" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="96" fill="#2d2d4a"/>
+  <circle cx="128" cy="128" r="90" fill="url(#userGrad)"/>
+  <g filter="url(#iconShadowUser)" fill="#ffffff">
+    <circle cx="128" cy="95" r="28"/>
+    <path d="M 78 185 C 78 145, 95 130, 128 130 C 161 130, 178 145, 178 185 Z"/>
+  </g>
+</svg>

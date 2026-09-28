@@ -8,6 +8,5 @@ import { TextFieldView } from '@app/shared/components/text-field-view/text-field
   selector: 'app-logo',
   styleUrl: './logo.scss',
   templateUrl: './logo.html',
-  standalone: true,
 })
 export class Logo {}

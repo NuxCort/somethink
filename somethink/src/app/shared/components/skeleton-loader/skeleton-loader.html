@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  [attr.viewBox]="'0 0 ' + width() + ' ' + height()"
+  [style.width.px]="width()"
+  [style.height.px]="height()"
+>
+  <defs>
+    <linearGradient id="loadingShimmer" x1="-100%" y1="0" x2="0%" y2="0">
+      <stop offset="0%" stop-color="#e0e0e0" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#f5f5f5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#e0e0e0" stop-opacity="0.3"/>
+      <animate attributeName="x1" values="-100%; 200%" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%; 300%" dur="1.5s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+
+  <!-- Динамические width и height -->
+  <rect
+    x="0"
+    y="0"
+    [attr.width]="width()"
+    [attr.height]="height()"
+    rx="8"
+    ry="8"
+    fill="url(#loadingShimmer)"
+    opacity="0.8"
+  />
+</svg>

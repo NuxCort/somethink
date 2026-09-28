@@ -6,9 +6,7 @@ import { HeaderSearchFormFactoryService } from '@app/sections/header/services/he
 @Component({
   imports: [ FlexBlock, TextFieldInput],
   selector: 'app-search',
-  styleUrl: './search.scss',
   templateUrl: './search.html',
-  standalone: true,
 })
 export class Search {
   protected readonly headerSearchFormFactoryService = inject(HeaderSearchFormFactoryService);

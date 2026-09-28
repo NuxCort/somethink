@@ -1,0 +1,7 @@
+<flex-block class="video-tiles" flexFlow="wrap" [gap]="50">
+  @for(link of mockVideosLinks; track link.id) {
+    <a [routerLink]="['link']">
+      <skeleton-loader [height]="180" [width]="360" />
+    </a>
+  }
+</flex-block>

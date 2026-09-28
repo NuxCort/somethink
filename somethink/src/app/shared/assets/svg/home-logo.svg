@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="houseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="iconShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="96" fill="#2d2d4a"/>
+  <circle cx="128" cy="128" r="90" fill="url(#houseGrad)"/>
+  <g filter="url(#iconShadow)" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="70,130 128,75 186,130"/>
+    <path d="M 82 125 L 82 180 L 110 180 L 110 148 L 146 148 L 146 180 L 174 180 L 174 125"/>
+  </g>
+</svg>
