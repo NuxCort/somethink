@@ -1,7 +1,13 @@
 <flex-block class="video-tiles" flexFlow="wrap" [gap]="50">
-  @for(link of mockVideosLinks; track link.id) {
-    <a [routerLink]="['link']">
-      <skeleton-loader [height]="180" [width]="360" />
-    </a>
-  }
+<!--  @for(link of mockVideosLinks; track link.id) {-->
+<!--    <a [routerLink]="['link']">-->
+<!--      <skeleton-loader [height]="180" [width]="360" />-->
+<!--    </a>-->
+<!--  }-->
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/29eb771e5df489ef00262b8d1448e690/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/1ae73e8f4aa5369463eb45893470d345/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/da267b88d4e21c1ea1828fc6f83e3e5f/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/8efffe7ab79315cc1eb607523fa9f6ac/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/7c0f43ae8b304492f7be65dad32a5b01/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
+  <iframe width="720" height="405" src="https://rutube.ru/play/embed/5b845c785ed620d5c8d22edc85638e8f/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
 </flex-block>
