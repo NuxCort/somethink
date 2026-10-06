@@ -4,9 +4,10 @@ import { TextFieldInput } from '@app/shared/components/text-field-input/text-fie
 import { HeaderSearchFormFactoryService } from '@app/sections/header/services/header-search-form-factory.service';
 
 @Component({
-  imports: [ FlexBlock, TextFieldInput],
   selector: 'app-search',
   templateUrl: './search.html',
+  standalone: true,
+  imports: [FlexBlock, TextFieldInput],
 })
 export class Search {
   protected readonly headerSearchFormFactoryService = inject(HeaderSearchFormFactoryService);

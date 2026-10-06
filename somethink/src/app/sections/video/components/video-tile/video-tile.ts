@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { FlexBlock } from '@app/shared/components/flex-block/flex-block';
-import { SkeletonLoader } from '@app/shared/components/skeleton-loader/skeleton-loader';
-import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [FlexBlock, SkeletonLoader, RouterLink],
   selector: 'video-tile',
   styleUrl: './video-tile.scss',
   templateUrl: './video-tile.html',
+  standalone: true,
+  imports: [FlexBlock],
 })
 export class VideoTile {
   mockVideosLinks = [

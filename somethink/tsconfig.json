@@ -15,7 +15,8 @@
     "module": "preserve",
     "paths": {
       "@app/*": ["./src/app/*"]
-    }
+    },
+    "strictNullChecks": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

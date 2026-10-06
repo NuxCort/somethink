@@ -8,6 +8,7 @@ import { CursorType } from '@app/shared/types/custom-types';
   host: {
     '[style.--cursor]': 'cursor()',
   },
+  standalone: true,
 })
 export class SkeletonLoader {
   public readonly width = input<number>(200);

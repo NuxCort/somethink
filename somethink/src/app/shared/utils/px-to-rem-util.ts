@@ -1,4 +1,4 @@
-export const DEFAULT_BASE_FONT_SIZE = 16;
+export const DEFAULT_BASE_FONT_SIZE = 16 as const;
 
 /**
  * Конвертирует пиксели в rem.

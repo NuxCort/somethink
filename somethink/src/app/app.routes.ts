@@ -1,15 +1,17 @@
 import { Routes } from '@angular/router';
-import { App } from './app';
 
 export const routes: Routes = [
   {
     path: '',
-    component: App,
     children: [
       {
-        path: 'main-base',
-        loadComponent: (() => (import('@app/sections/main-base').then(m => m.MainBaseComponent))),
+        path: '',
+        loadComponent: () => import('@app/sections/main-base').then((m) => m.MainBaseComponent),
+      },
+      {
+        path: 'auth',
+        loadComponent: () => import('@app/sections/auth/auth').then((m) => m.Auth),
       },
     ],
   },
-];
+] as const;

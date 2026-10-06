@@ -3,10 +3,11 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldView } from '@app/shared/components/text-field-view/text-field-view';
 
 @Component({
-  imports: [ReactiveFormsModule, TextFieldView],
   selector: 'text-field-input',
-  styleUrl: './text-field-input.scss',
   templateUrl: './text-field-input.html',
+  styleUrl: './text-field-input.scss',
+  standalone: true,
+  imports: [ReactiveFormsModule, TextFieldView],
 })
 export class TextFieldInput {
   public readonly control = input<FormControl<unknown>>(new FormControl(''));

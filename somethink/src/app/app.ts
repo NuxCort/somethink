@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderBase } from '@app/sections/header/components/header.base';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  template: `<router-outlet />`,
+  template: `
+    <header-base />
+    <router-outlet />
+  `,
+  standalone: true,
+  imports: [RouterOutlet, HeaderBase],
 })
 export class App {}
