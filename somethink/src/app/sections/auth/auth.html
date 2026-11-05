@@ -1,22 +1,30 @@
-<flex-block class="video-tiles" flexDirection="column" [gap]="50">
-  <text-field-row-view
-  [title]="'Title Title'"
-  [text]="'Text TextText Text'"
-  >
-  </text-field-row-view>
-  <text-field-row-view
-  [title]="'Title Title'"
-  [text]="'Text TextText Text'"
-  >
-  </text-field-row-view>
-  <text-field-row-view
-  [title]="'Title Title'"
-  [text]="'Text TextText Text'"
-  >
-  </text-field-row-view>
-  <text-field-row-view
-  [title]="'Title Title'"
-  [text]="'Text TextText Text'"
-  >
-  </text-field-row-view>
+<flex-block class="auth" flexDirection="column" [gap]="16">
+  <form [formGroup]="form" (ngSubmit)="submitLogin()">
+    <flex-block flexDirection="column" [gap]="12">
+      <label class="field">
+        <span class="field__label">Логин</span>
+        <input class="field__input" type="text" formControlName="login" placeholder="Введите логин" />
+      </label>
+      @if (form.controls.login.touched && form.controls.login.invalid) {
+        <span class="error">Логин обязателен (минимум 3 символа)</span>
+      }
+
+      <label class="field">
+        <span class="field__label">Пароль</span>
+        <input class="field__input" type="password" formControlName="password" placeholder="Введите пароль" />
+      </label>
+      @if (form.controls.password.touched && form.controls.password.invalid) {
+        <span class="error">Пароль обязателен (минимум 6 символов)</span>
+      }
+
+      @if (error()) {
+        <span class="error">{{ error() }}</span>
+      }
+
+      <flex-block flexDirection="row" [gap]="12">
+        <button type="submit" class="button button--primary" [disabled]="isLoading()">Войти</button>
+        <button type="button" class="button button--accent" (click)="submitRegister()" [disabled]="isLoading()">Зарегистрироваться</button>
+      </flex-block>
+    </flex-block>
+  </form>
 </flex-block>

@@ -1,7 +1,6 @@
-const API = {
-  API: 'api/v1/'
-} as const;
+const API_BASE = 'api/v1';
 
 export const API_ENDPOINTS = {
-  LOGIN: `${API}login`,
+  LOGIN: `${API_BASE}/login`,
+  REGISTER: `${API_BASE}/register`,
 } as const;
